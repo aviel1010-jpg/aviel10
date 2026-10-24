@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVIEL10 - מנוע החיפוש שלי</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: white;
+      color: #202124;
+      text-align: center;
+    }
+    header {
+      text-align: right;
+      padding: 22px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    main { margin-top: 100px; padding: 20px; }
+    .logo {
+      font-size: clamp(48px, 9vw, 82px);
+      font-weight: bold;
+      letter-spacing: -3px;
+      margin-bottom: 30px;
+    }
+    .logo span:nth-child(1) { color: #4285f4; }
+    .logo span:nth-child(2) { color: #ea4335; }
+    .logo span:nth-child(3) { color: #fbbc05; }
+    .logo span:nth-child(4) { color: #4285f4; }
+    .logo span:nth-child(5) { color: #34a853; }
+    .logo span:nth-child(6) { color: #ea4335; }
+    form {
+      max-width: 580px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      border: 1px solid #dfe1e5;
+      border-radius: 28px;
+      padding: 6px 18px;
+      gap: 12px;
+    }
+    form:hover {
+      box-shadow: 0 1px 6px #0002;
+    }
+    input {
+      flex: 1;
+      min-width: 0;
+      border: none;
+      outline: none;
+      font-size: 17px;
+      padding: 10px 0;
+      background: transparent;
+    }
+    button {
+      border: 0;
+      background: #f8f9fa;
+      padding: 12px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover { background: #eef0f3; }
+    .buttons { margin-top: 25px; }
+    .note { color: #70757a; font-size: 13px; margin-top: 35px; }
+  </style>
+</head>
+<body>
+  <header>AVIEL10</header>
+  <main>
+    <div class="logo"><span>A</span><span>V</span><span>I</span><span>E</span><span>L</span><span>10</span></div>
+    <form action="https://www.google.com/search" method="get">
+      <span>🔎</span>
+      <input name="q" type="search" placeholder="חיפוש באינטרנט..." aria-label="חיפוש" required>
+      <button type="submit" aria-label="חפש">חפש</button>
+    </form>
+    <div class="buttons">
+      <button onclick="location.href='https://www.google.com/imghp'">חיפוש תמונות</button>
+      <button onclick="location.href='https://www.youtube.com'">סרטונים</button>
+    </div>
+    <p class="note">ברוכים הבאים למנוע החיפוש AVIEL10</p>
+  </main>
+</body>
+</html>
